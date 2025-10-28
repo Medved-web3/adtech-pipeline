@@ -205,3 +205,60 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- AdTech pipeline specific ignores ---
+
+# Airflow
+airflow/logs/
+airflow/dags/__pycache__/
+airflow/*.db
+airflow/.airflowenv
+.airflow/
+
+# dbt
+dbt/target/
+dbt/dbt_modules/
+dbt/logs/
+dbt/.user.yml
+
+# Data and analytics artifacts
+data/
+*.parquet
+*.csv
+*.json
+*.zip
+*.gz
+
+# Docker & Compose
+docker-compose.override.yml
+*.pid
+*.sock
+*.log
+tmp/
+volumes/
+
+# MinIO / S3 mock storage
+minio/
+storage/
+bucket_data/
+
+# ClickHouse
+clickhouse/data/
+clickhouse/logs/
+clickhouse/backup/
+
+# Local notebooks
+notebooks/.ipynb_checkpoints/
+*.ipynb
+
+# Superset / Metabase / Grafana configs
+superset_home/
+grafana/
+metabase/
+
+# Other environment files
+.env
+.env.local
+.env.dev
+.env.prod
+.env.test

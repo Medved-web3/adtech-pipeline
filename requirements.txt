@@ -1,0 +1,9 @@
+﻿pandas
+requests
+kafka-python
+pyarrow
+fastparquet
+python-dotenv
+clickhouse-connect
+boto3
+pytest
